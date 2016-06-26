@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="jokeCellId" rowHeight="418" id="KGk-i7-Jjw" customClass="JokeCell" customModule="TableViewCellFitDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="387" height="418"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="387" height="417.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mu3-Yy-ERJ" userLabel="头像">
+                        <rect key="frame" x="5" y="10" width="50" height="50"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="50" id="Pbh-TW-hnI"/>
+                            <constraint firstAttribute="height" constant="50" id="hnZ-Ms-4QB"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                <integer key="value" value="25"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nfb-9I-NKj" userLabel="昵称">
+                        <rect key="frame" x="60" y="10" width="319" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0NE-vD-FRm" userLabel="笑话内容">
+                        <rect key="frame" x="5" y="70" width="374" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="d9f-uR-bRv" userLabel="配图">
+                        <rect key="frame" x="5" y="96" width="374" height="315"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="315" id="9e9-2u-Gjc"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="Mu3-Yy-ERJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="0Cp-kD-1z0"/>
+                    <constraint firstItem="d9f-uR-bRv" firstAttribute="trailing" secondItem="0NE-vD-FRm" secondAttribute="trailing" id="5Jf-e9-DM5"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="0NE-vD-FRm" secondAttribute="trailing" id="Irs-Li-MmB"/>
+                    <constraint firstItem="Mu3-Yy-ERJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="KQp-9z-BWs"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="nfb-9I-NKj" secondAttribute="trailing" id="Or1-fO-Jww"/>
+                    <constraint firstItem="d9f-uR-bRv" firstAttribute="top" secondItem="0NE-vD-FRm" secondAttribute="bottom" constant="10" id="TDY-bi-WIR"/>
+                    <constraint firstItem="0NE-vD-FRm" firstAttribute="leading" secondItem="Mu3-Yy-ERJ" secondAttribute="leading" id="X1h-22-NB2"/>
+                    <constraint firstItem="0NE-vD-FRm" firstAttribute="top" secondItem="Mu3-Yy-ERJ" secondAttribute="bottom" constant="10" id="d0c-d3-wgd"/>
+                    <constraint firstItem="nfb-9I-NKj" firstAttribute="leading" secondItem="Mu3-Yy-ERJ" secondAttribute="trailing" constant="5" id="dwd-PP-cID"/>
+                    <constraint firstItem="nfb-9I-NKj" firstAttribute="top" secondItem="Mu3-Yy-ERJ" secondAttribute="top" id="oXs-ey-Iwq"/>
+                    <constraint firstItem="d9f-uR-bRv" firstAttribute="leading" secondItem="0NE-vD-FRm" secondAttribute="leading" id="sAe-C0-GGY"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="headPortrait" destination="Mu3-Yy-ERJ" id="u4s-vM-9SJ"/>
+                <outlet property="jokeContent" destination="0NE-vD-FRm" id="L6r-u0-9F2"/>
+                <outlet property="nickName" destination="nfb-9I-NKj" id="SAT-0a-Vvq"/>
+                <outlet property="picture" destination="d9f-uR-bRv" id="FRo-Xq-gV6"/>
+            </connections>
+            <point key="canvasLocation" x="265.5" y="429"/>
+        </tableViewCell>
+    </objects>
+</document>
